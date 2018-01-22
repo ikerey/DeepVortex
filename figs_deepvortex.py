@@ -7,7 +7,7 @@ from astropy.io import fits
 
 # Frame interval
 ninit=0  #initial frame
-nfin=44  #final frame
+nfin=16  #final frame
 
 # Files and paths
 file_vel = 'sample.fits'
