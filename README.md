@@ -3,7 +3,7 @@
 `DeepVortex` is an end-to-end deep neural network to detect vortex flows from pairs of images containing the x and y component of the horizontal velocities. An update of the neural network model will be provided soon.
 
 ![example](Figs/vortex_detection_DeepVortex.gif?raw=true "")
-**Figure 1** - Example of vortex flow detection with `DeepVortex
+**Figure 1** - Example of vortex flow detection with `DeepVortex`.
 
 ## Dependencies of `DeepVortex`
 
