@@ -13,9 +13,9 @@ nfin=16  #final frame
 file_vel = 'sample.fits'
 file_vor = 'output.fits'
 file_output = 'vortex_detection_DeepVortex'
-path_vel = "/home/requerey/Iker/GitHub/DeepVortex/Sample/"
-path_vor = "/home/requerey/Iker/GitHub/DeepVortex/Output/"
-path_output = "/home/requerey/Iker/GitHub/DeepVortex/Figs/"
+path_vel = "/DeepVortex/Sample/"
+path_vor = "/DeepVortex/Output/"
+path_output = "/DeepVortex/Figs/"
 
 ## ----------------------- Constants  Plot -------------------------- #
 # Pixel size in Mm
@@ -64,7 +64,6 @@ for i in np.arange(ninit,nfin+1,1):
 
     ax = plt.subplot()
     plt.imshow(vor[i,:,:,0], cmap='RdBu', extent=[0,szx*scale,0,szy*scale], vmin=rangePlot[0],vmax=rangePlot[1])
-    #box = ax.get_position() # Get axis position for the color bar
     plt.autoscale(False)
     plt.streamplot(X*scale, Y*scale, vx, vy, density=10, linewidth=0.75, arrowsize=0.75, arrowstyle='->', color='k')   
     plt.contour(Xc*scale, Yc*scale, np.absolute(vor[i,:,:,0]),[0.5], colors='lime')    
