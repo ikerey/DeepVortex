@@ -62,11 +62,11 @@ class train_deepvortex(object):
         self.batch_size = 32
         self.n_conv_layers = 5
         
-        self.input_file_velocity_training = "/home/requerey/Iker/GitHub/DeepVortex/database/database_velocity_training.h5"
-        self.input_file_mask_training = "/home/requerey/Iker/GitHub/DeepVortex/database/database_mask_training.h5"
+        self.input_file_velocity_training = "/DeepVortex/database/database_velocity_training.h5"
+        self.input_file_mask_training = "/DeepVortex/database/database_mask_training.h5"
 
-        self.input_file_velocity_validation = "/home/requerey/Iker/GitHub/DeepVortex/database/database_velocity_validation.h5"
-        self.input_file_mask_validation = "/home/requerey/Iker/GitHub/DeepVortex/database/database_mask_validation.h5"
+        self.input_file_velocity_validation = "/DeepVortex/database/database_velocity_validation.h5"
+        self.input_file_mask_validation = "/DeepVortex/database/database_mask_validation.h5"
 
         f = h5py.File(self.input_file_velocity_training, 'r')
         self.n_training_orig, self.nx, self.ny, self.n_times = f.get("velocity").shape        
