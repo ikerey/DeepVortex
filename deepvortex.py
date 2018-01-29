@@ -52,8 +52,8 @@ class deepvortex(object):
         self.observations = observations
         self.output = output
 
-        print("Images without border are of size: {0}x{1}".format(self.nx, self.ny))
-        print("Number of predictions to be made: {0}".format(self.n_frames))
+        print("Image size: {0}x{1}".format(self.nx, self.ny))
+        print("Number of images: {0}".format(self.n_frames))
 
     def residual(self, inputs):
         x = Convolution2D(self.n_filters, (3, 3), padding='same', kernel_initializer='he_normal')(inputs)
